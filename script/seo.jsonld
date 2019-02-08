@@ -1,0 +1,11 @@
+{
+	"@context": "index.php",
+	"@type": "Person",
+	"name": "your name",
+	"url": "http://www.your-site.com",
+	"sameAs": [
+		"http://www.facebook.com/ABC_hotels",
+		"http://instagram.com/ABC_hotels",
+		"http://plus.google.com/ABC_hotels"
+	]
+}
