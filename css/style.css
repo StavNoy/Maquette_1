@@ -1,0 +1,183 @@
+body {
+	font-family: "Droid Sans", Oswald, "Droid Serif", sans-serif;
+	color: grey;
+	font-size: smaller;
+}
+a {
+	color: grey;
+}
+@font-face {
+	font-family: 'Oswald', 'Droid Sans', 'Droid Serif';
+}
+
+header, main, #video, #banner, #foot-body, #foot-bottom {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+h3, h4 {
+	font-family: Oswald, serif;
+	text-transform: uppercase;
+}
+
+.flexbox{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+
+.grilled {
+	background: url('../img/grille.png') repeat;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#logo {
+	align-self: center;
+	flex-grow: 2;
+}
+
+#nav-head {
+	flex-grow: 5;
+	justify-content: space-evenly;
+}
+
+#nav-head h3 {
+	width: 140%;
+	font-weight: normal;
+	border-bottom: solid 5px ;
+	padding-bottom: 10%;
+}
+
+#nav-head a, #foot-bottom a, #main a, .italic-serif-fade{
+	text-decoration-line: none;
+}
+
+#hotels h3 {
+	border-bottom-color: red;
+}
+
+#restaurants h3 {
+	border-bottom-color: greenyellow;
+}
+
+#services h3 {
+	border-bottom-color: lightgreen;
+}
+
+#activities h3 {
+	border-bottom-color: purple;
+}
+
+#plus h3 {
+	border-bottom-color: blueviolet;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#nav-head li {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: lighter;
+	text-transform: capitalize;
+	margin-top: 10%;
+}
+.border-top {
+	border-top: 1px solid rgb(230, 230, 230);
+	margin-top: 10px;
+	padding-top: 30px;
+}
+.border-bottom {
+	border-bottom: 1px solid rgb(230, 230, 230);
+	margin-bottom: 10px;
+	padding-bottom: 30px;
+}
+
+iframe {
+	display:block;
+	margin: 0 auto;
+}
+
+#banner {
+	font-family: 'Droid Serif', serif;
+	font-size: large;
+	font-weight: normal;
+	font-style: italic;
+	text-transform: none;
+	text-align: center;
+	padding: 20px;
+}
+
+#main {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 7%;
+}
+
+.framed {
+	border: 1px solid rgb(230, 230, 230);
+	padding: 2%;
+}
+
+#main > *:nth-child(1) {
+	grid-area: 1 / 1 / 3 / 2;
+	max-height: 330px;
+	padding-bottom: 5%;
+}
+
+#main h3 {
+	color: red;
+	font-weight: lighter;
+	font-size: x-large;
+	margin-bottom: 5px;
+}
+
+#contact li {
+	display: flex;
+}
+#contact li+li {
+	margin-top: 4%;
+}
+
+.italic-serif-fade {
+	font-family: "Droid Serif", serif;
+	font-style: italic;
+	color: lightgrey;
+}
+aside {
+	font-size: x-small;
+}
+
+#foot-body > * {
+	flex-basis: 15%;
+}
+
+#foot-body > * > * {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#foot-body h4 {
+	font-size: medium;
+}
+
+#foot-body h5 {
+	font-size: small;
+}
+
+#footplaces a+a {
+	border-left: 1px solid;
+	margin-left: 2%;
+	padding-left: 2%;
+}
+
+small {
+	display: inline-block;
+}
